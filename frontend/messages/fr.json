@@ -1,7 +1,8 @@
 {
   "brand": {
     "name": "SandorHii",
-    "tagline": "La vérité, vérifiée."
+    "tagline": "La vérité, vérifiée.",
+    "metaDescription": "SandorHii détecte les fake news grâce à trois pôles d'analyse complémentaires — linguistique, média et technologique — pour déterminer si un contenu est une fake news ou une information réelle."
   },
   "nav": {
     "home": "Vérifier",
@@ -17,7 +18,7 @@
   "home": {
     "title": "Bonjour, c'est ZOH !",
     "subtitle": "🔍 Que veux-tu vérifier aujourd'hui ?",
-    "placeholder": "Colle un texte, un lien d'article, ou décris l'information ici…",
+    "placeholder": "Colle le texte à analyser, ou décris l'information que tu veux vérifier…",
     "submit": "Lancer la vérification",
     "submitting": "Analyse en cours…",
     "minLength": "Le texte doit contenir au moins 20 caractères.",
@@ -25,7 +26,7 @@
     "disclaimer": "⚖️ Les résultats sont générés par un système automatisé et constituent une aide à la décision, pas une déclaration définitive de fait.",
     "error": "Une erreur est survenue. Vérifie ta connexion et réessaie.",
     "resultTitle": "Résultat de l'analyse linguistique",
-    "resultNote": "Ceci est une analyse automatique du pilier linguistique uniquement (v1). Elle mesure la présence de techniques de manipulation connues — ce n'est pas encore un verdict de vérité. Notre équipe examine chaque soumission avant publication.",
+    "resultNote": "Ceci est le premier des trois pôles d'analyse de SandorHii : le pôle linguistique (v1). Il mesure la présence de techniques de manipulation connues — ce n'est pas encore le verdict final (fake news ou info réelle). Notre équipe humaine examine chaque soumission avant de publier ce verdict.",
     "noSignals": "Aucune technique de manipulation linguistique connue n'a été détectée dans ce texte.",
     "signalsTitle": "Signaux détectés",
     "occurrences": "{count, plural, =1 {1 occurrence} other {# occurrences}}",
@@ -33,8 +34,8 @@
     "scoreLabel": "Score de suspicion manipulatoire",
     "langUnsupported": "Le pilier linguistique ne sait pas encore analyser cette langue en détail — seuls les signaux structurels (majuscules, ponctuation) sont mesurés.",
     "pillars": {
-      "title": "Trois piliers, un seul score de fiabilité",
-      "subtitle": "SandorHii combine trois angles d'analyse complémentaires pour vérifier un contenu. Notre différence : le pilier linguistique — il décortique la manière dont un texte cherche à manipuler, pas seulement ce qu'il montre.",
+      "title": "Trois pôles d'analyse, un seul verdict : fake news ou info réelle ?",
+      "subtitle": "La mission de SandorHii : déterminer si un contenu est une fake news ou une information réelle, en croisant trois pôles d'analyse complémentaires — linguistique, média et technologique. Notre différence : le pôle linguistique décortique la manière dont un texte cherche à manipuler, pas seulement ce qu'il montre.",
       "statusActive": "Actif aujourd'hui",
       "statusSoon": "Phase 2 — à venir",
       "linguistic": {
@@ -176,5 +177,46 @@
   "common": {
     "loading": "Chargement…",
     "notFound": "Introuvable."
+  },
+  "methodology": {
+    "navLabel": "Méthodologie",
+    "title": "Comment fonctionne SandorHii ?",
+    "intro": "SandorHii existe pour répondre à une seule question : ce contenu est-il une fake news ou une information réelle ? Pour y répondre sérieusement, on croise trois pôles d'analyse complémentaires — linguistique, média et technologique. Voici, en toute transparence, ce qui est actif aujourd'hui et comment ça fonctionne réellement.",
+    "stepsTitle": "Le parcours d'une vérification",
+    "step1Title": "1. Vous soumettez un texte",
+    "step1Text": "Collez le texte, le message ou l'article que vous voulez faire vérifier.",
+    "step2Title": "2. Analyse linguistique automatique",
+    "step2Text": "En quelques secondes, le pôle linguistique (le seul actif aujourd'hui — média et technologique arrivent en Phase 2) examine le texte à la recherche de techniques de manipulation connues.",
+    "step3Title": "3. Un score de suspicion, pas un verdict",
+    "step3Text": "Vous voyez immédiatement les techniques détectées et un score. Ce score mesure la présence de manipulation dans la forme du texte — ce n'est jamais une déclaration \"c'est faux\" ou \"c'est vrai\".",
+    "step4Title": "4. Vérification et verdict humains",
+    "step4Text": "Notre équipe examine chaque soumission, vérifie les faits, et publie le verdict final : Vrai, Faux, Trompeur, Partiellement vrai, ou Non vérifiable. Aucun verdict n'est publié par la machine seule.",
+    "pillarTitle": "Ce que détecte le pôle linguistique aujourd'hui",
+    "pillarIntro": "Le moteur repose sur des règles linguistiques explicites (pas une intelligence artificielle qui \"devine\") : chaque technique ci-dessous a été définie et validée une par une, ce qui rend chaque score explicable et vérifiable. Trois grandes familles sont surveillées :",
+    "limitsTitle": "Les limites, en toute honnêteté",
+    "limitsText": "Ce moteur détecte des TECHNIQUES de manipulation, pas des faits. Un texte peut obtenir un score bas et pourtant être faux, s'il ne recourt à aucune des techniques ci-dessus. C'est pour cette raison qu'un score linguistique n'est jamais publié comme verdict final — il aide notre équipe humaine, qui garde toujours le dernier mot avant publication."
+  },
+  "legal": {
+    "navLabel": "Confidentialité & CGU",
+    "title": "Conditions d'utilisation & confidentialité",
+    "updated": "Dernière mise à jour : 25 août 2026",
+    "whoTitle": "Qui gère ce site",
+    "whoText": "SandorHii est un projet indépendant de fact-checking. Pour toute question sur cette page ou sur vos données, écrivez-nous : {email}.",
+    "dataTitle": "Ce que vous nous envoyez",
+    "dataText": "Quand vous soumettez un texte à vérifier, on enregistre : le texte lui-même, la langue choisie, et la date d'envoi. C'est tout — aucun compte n'est requis, on ne vous demande jamais votre nom, votre email ou votre numéro de téléphone pour utiliser le service.",
+    "useTitle": "Comment c'est utilisé",
+    "useText": "Le texte est d'abord analysé automatiquement par le pôle linguistique. Il est ensuite examiné par un membre de notre équipe avant toute publication. Si un verdict est publié, le texte soumis (ou un extrait) et le verdict apparaissent publiquement dans le fil des vérifications — ne soumettez donc rien que vous ne voulez pas voir rendu public.",
+    "retentionTitle": "Combien de temps c'est conservé",
+    "retentionText": "Les textes soumis sont conservés aussi longtemps que le service existe, qu'ils soient publiés ou non — il n'y a pas de suppression automatique aujourd'hui. Vous pouvez nous écrire à tout moment pour demander la suppression d'un contenu que vous avez soumis.",
+    "neverTitle": "Ce qu'on ne fait jamais",
+    "neverText": "On ne revend aucune donnée, on ne fait aucun suivi publicitaire, et on n'utilise aucun cookie de traçage. Seule votre préférence d'affichage (thème clair/sombre) est gardée dans votre navigateur — elle ne nous est jamais transmise.",
+    "securityTitle": "Sécurité",
+    "securityText": "La connexion à ce site est chiffrée (HTTPS). L'accès à l'espace de validation des contenus est protégé par un mot de passe connu uniquement de notre équipe.",
+    "dontSubmitTitle": "Ce qu'il ne faut pas soumettre",
+    "dontSubmitText": "N'envoyez pas d'informations personnelles sensibles, de contenu illégal, ou toute donnée confidentielle que vous ne souhaitez pas voir potentiellement publiée.",
+    "resultsTitle": "Nature des résultats",
+    "resultsText": "Les analyses automatiques sont une aide à la décision, jamais une déclaration définitive de fait. Voir notre page Méthodologie pour le détail.",
+    "changesTitle": "Évolution de cette page",
+    "changesText": "Cette page peut être mise à jour à mesure que le service évolue. La date de dernière mise à jour est indiquée en haut de page."
   }
 }

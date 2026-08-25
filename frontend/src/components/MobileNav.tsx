@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function MobileNav() {
   const t = useTranslations("nav");
+  const tMethodology = useTranslations("methodology");
   const [open, setOpen] = useState(false);
 
   return (
@@ -45,6 +46,13 @@ export function MobileNav() {
               className="text-[#ccc] hover:text-white"
             >
               {t("feed")}
+            </Link>
+            <Link
+              href="/methodologie"
+              onClick={() => setOpen(false)}
+              className="text-[#ccc] hover:text-white"
+            >
+              {tMethodology("navLabel")}
             </Link>
             <Link
               href="/admin"

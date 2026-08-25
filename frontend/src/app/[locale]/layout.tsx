@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("brand");
   return {
     title: `${t("name")} — ${t("tagline")}`,
-    description: t("tagline"),
+    description: t("metaDescription"),
   };
 }
 
@@ -84,6 +84,12 @@ export default async function LocaleLayout({
                   {t("nav.feed")}
                 </Link>
                 <Link
+                  href="/methodologie"
+                  className="text-[#ccc] transition-colors hover:text-white"
+                >
+                  {t("methodology.navLabel")}
+                </Link>
+                <Link
                   href="/admin"
                   className="text-[#ccc] transition-colors hover:text-white"
                 >
@@ -96,8 +102,16 @@ export default async function LocaleLayout({
             </div>
           </header>
           <main className="flex-1">{children}</main>
-          <footer className="px-5 py-7 text-center text-[13px] text-muted-2">
-            🔍 {t("brand.name")} — {t("brand.tagline")}
+          <footer className="flex flex-col items-center gap-2 px-5 py-7 text-center text-[13px] text-muted-2">
+            <span>
+              🔍 {t("brand.name")} — {t("brand.tagline")}
+            </span>
+            <Link
+              href="/confidentialite"
+              className="underline decoration-dotted underline-offset-2 hover:text-muted"
+            >
+              {t("legal.navLabel")}
+            </Link>
           </footer>
         </NextIntlClientProvider>
       </body>
