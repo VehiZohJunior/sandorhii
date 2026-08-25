@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Mise en page reprise de X-GRAY (bandeau sombre fixe, carte qui
+   chevauche le heros, polices systeme). Les COULEURS, elles, viennent
+   du logo SanDorHii (bleu marine + bleu ciel) et non de X-GRAY - seul
+   le rouge du badge "trompeur"/"faux" (VerdictCard.tsx, code en dur)
+   reste celui de X-GRAY, a la demande explicite de l'utilisateur. */
+:root {
+  --background: #f4f6f9;
+  --surface: #ffffff;
+  --surface-alt: #e8edf3;
+  --foreground: #1f2937;
+  --muted: #64748b;
+  --muted-2: #94a3b8;
+  --border: #dce3ec;
+  --heading: #223a52;
+  /* Bleu marine de marque (SanDorHii) : ne s'inverse JAMAIS avec le theme
+     (topbar, hero) - contrairement a --heading, qui est une couleur de
+     TEXTE et doit rester lisible sur le fond de sa propre surface. */
+  --ink: #0f2a4d;
+  --accent: #2e6da4;
+  --accent-strong: #1b4c7a;
+  --accent-light: #6fa8d8;
+  --accent-soft: #e4f0f9;
+  --good: #2e7d32;
+  --good-bg: #d9efdc;
+  --warn: #b3760a;
+  --warn-bg: #fff3d6;
+  --bad: #7f0000;
+  --bad-bg: #fde2e2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #0b1524;
+    --surface: #14263f;
+    --surface-alt: #1b3352;
+    --foreground: #eef2f7;
+    --muted: #9fb0c3;
+    --muted-2: #8598ad;
+    --border: #274263;
+    --heading: #eef4fa;
+    --accent: #6fa8d8;
+    --accent-strong: #9cc7e8;
+    --accent-light: #9cc7e8;
+    --accent-soft: #1b3352;
+    --good: #5cc199;
+    --good-bg: #11301f;
+    --warn: #e0ab53;
+    --warn-bg: #3a2c10;
+    --bad: #ff8a80;
+    --bad-bg: #3a1712;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #0b1524;
+  --surface: #14263f;
+  --surface-alt: #1b3352;
+  --foreground: #eef2f7;
+  --muted: #9fb0c3;
+  --muted-2: #8598ad;
+  --border: #274263;
+  --heading: #eef4fa;
+  --accent: #6fa8d8;
+  --accent-strong: #9cc7e8;
+  --accent-light: #9cc7e8;
+  --accent-soft: #1b3352;
+  --good: #5cc199;
+  --good-bg: #11301f;
+  --warn: #e0ab53;
+  --warn-bg: #3a2c10;
+  --bad: #ff8a80;
+  --bad-bg: #3a1712;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-border: var(--border);
+  --color-heading: var(--heading);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-light: var(--accent-light);
+  --color-accent-soft: var(--accent-soft);
+  --color-good: var(--good);
+  --color-good-bg: var(--good-bg);
+  --color-warn: var(--warn);
+  --color-warn-bg: var(--warn-bg);
+  --color-bad: var(--bad);
+  --color-bad-bg: var(--bad-bg);
+  --font-display: var(--font-system);
+  --font-body: var(--font-system);
+}
+
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-system);
+}

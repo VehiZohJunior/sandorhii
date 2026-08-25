@@ -1,0 +1,180 @@
+{
+  "brand": {
+    "name": "SandorHii",
+    "tagline": "La vérité, vérifiée."
+  },
+  "nav": {
+    "home": "Vérifier",
+    "feed": "Fil des vérifications",
+    "admin": "Back-office"
+  },
+  "theme": {
+    "label": "Thème : {theme}",
+    "system": "auto",
+    "light": "clair",
+    "dark": "sombre"
+  },
+  "home": {
+    "title": "Bonjour, c'est ZOH !",
+    "subtitle": "🔍 Que veux-tu vérifier aujourd'hui ?",
+    "placeholder": "Colle un texte, un lien d'article, ou décris l'information ici…",
+    "submit": "Lancer la vérification",
+    "submitting": "Analyse en cours…",
+    "minLength": "Le texte doit contenir au moins 20 caractères.",
+    "footerTag": "Service de Fact-Checking • SandorHii",
+    "disclaimer": "⚖️ Les résultats sont générés par un système automatisé et constituent une aide à la décision, pas une déclaration définitive de fait.",
+    "error": "Une erreur est survenue. Vérifie ta connexion et réessaie.",
+    "resultTitle": "Résultat de l'analyse linguistique",
+    "resultNote": "Ceci est une analyse automatique du pilier linguistique uniquement (v1). Elle mesure la présence de techniques de manipulation connues — ce n'est pas encore un verdict de vérité. Notre équipe examine chaque soumission avant publication.",
+    "noSignals": "Aucune technique de manipulation linguistique connue n'a été détectée dans ce texte.",
+    "signalsTitle": "Signaux détectés",
+    "occurrences": "{count, plural, =1 {1 occurrence} other {# occurrences}}",
+    "weightLabel": "poids",
+    "scoreLabel": "Score de suspicion manipulatoire",
+    "langUnsupported": "Le pilier linguistique ne sait pas encore analyser cette langue en détail — seuls les signaux structurels (majuscules, ponctuation) sont mesurés.",
+    "pillars": {
+      "title": "Trois piliers, un seul score de fiabilité",
+      "subtitle": "SandorHii combine trois angles d'analyse complémentaires pour vérifier un contenu. Notre différence : le pilier linguistique — il décortique la manière dont un texte cherche à manipuler, pas seulement ce qu'il montre.",
+      "statusActive": "Actif aujourd'hui",
+      "statusSoon": "Phase 2 — à venir",
+      "linguistic": {
+        "label": "Analyse linguistique",
+        "description": "Sophismes, lexique alarmiste, répétitions suspectes : chaque technique de manipulation est détectée et expliquée, phrase par phrase."
+      },
+      "media": {
+        "label": "Analyse média",
+        "description": "Recherche inversée d'images et de vidéos, crédibilité des sources, traçage de la propagation d'un contenu."
+      },
+      "tech": {
+        "label": "Analyse technologique",
+        "description": "Détection de deepfakes, de contenu généré par IA, et de réseaux de diffusion coordonnée inauthentique."
+      }
+    },
+    "categories": {
+      "sophisme": "Sophisme",
+      "lexique": "Lexique",
+      "attribution": "Attribution"
+    },
+    "levels": {
+      "aucun": "Aucun signal linguistique notable",
+      "a_surveiller": "Quelques signaux à surveiller",
+      "modere": "Risque modéré de manipulation linguistique",
+      "eleve": "Risque élevé de manipulation linguistique"
+    },
+    "signalCatalog": {
+      "faux_dilemme": {
+        "label": "Faux dilemme",
+        "explanation": "Le texte présente deux options comme si c'étaient les seules possibles, alors que d'autres existent presque toujours."
+      },
+      "pente_glissante": {
+        "label": "Pente glissante",
+        "explanation": "Le texte affirme qu'une première action entraînera inévitablement une chaîne de conséquences extrêmes, sans le démontrer."
+      },
+      "generalisation_abusive": {
+        "label": "Généralisation abusive",
+        "explanation": "Une conclusion générale est tirée à partir d'un ou deux exemples, ou un groupe entier est décrit avec 'tous'/'aucun'/'jamais'."
+      },
+      "ad_hominem": {
+        "label": "Attaque personnelle (ad hominem)",
+        "explanation": "Le texte attaque la personne (son caractère, sa moralité) plutôt que de discuter ses arguments."
+      },
+      "autorite_vague": {
+        "label": "Appel à une autorité non identifiée",
+        "explanation": "Le texte invoque « des experts » ou « des scientifiques » sans jamais les nommer ni citer de source vérifiable."
+      },
+      "complot": {
+        "label": "Lexique complotiste",
+        "explanation": "Le texte suggère une vérité cachée volontairement par « eux », sans preuve vérifiable présentée."
+      },
+      "detournement_whataboutism": {
+        "label": "Détournement (« et les autres alors ? »)",
+        "explanation": "Au lieu de répondre sur le fond, le texte détourne l'attention vers un autre sujet ou un autre acteur, sans traiter l'accusation initiale."
+      },
+      "homme_de_paille": {
+        "label": "Homme de paille (probable)",
+        "explanation": "Le texte reformule la position d'un adversaire de façon caricaturale avant de la réfuter — à vérifier contre la source originale."
+      },
+      "urgence_partage": {
+        "label": "Urgence à partager",
+        "explanation": "Le texte pousse à partager ou agir immédiatement, avant réflexion — une technique classique de propagation rapide."
+      },
+      "urgence_lexicale": {
+        "label": "Champ lexical de l'urgence",
+        "explanation": "Vocabulaire d'alerte immédiate (« urgent », « alerte ») utilisé pour court-circuiter la vérification."
+      },
+      "superlatifs": {
+        "label": "Superlatifs excessifs",
+        "explanation": "Formulations extrêmes (« jamais vu », « sans précédent ») qui exagèrent l'ampleur d'un fait pour frapper l'imagination."
+      },
+      "mots_choc": {
+        "label": "Mots-choc",
+        "explanation": "Vocabulaire choisi pour provoquer une réaction émotionnelle forte plutôt que pour informer."
+      },
+      "appel_emotion_peur": {
+        "label": "Appel à l'émotion (peur)",
+        "explanation": "Le texte cherche à faire peur plutôt qu'à informer sur les faits."
+      },
+      "majuscules_excessives": {
+        "label": "Usage excessif de majuscules",
+        "explanation": "Une part anormalement élevée du texte est écrite EN MAJUSCULES, une technique utilisée pour simuler l'urgence ou l'autorité plutôt que pour informer."
+      },
+      "ponctuation_excessive": {
+        "label": "Ponctuation exclamative excessive",
+        "explanation": "Un usage dense du point d'exclamation, souvent utilisé pour dramatiser un propos plutôt que pour l'étayer."
+      },
+      "repetition_suspecte": {
+        "label": "Répétition suspecte",
+        "explanation": "Une même expression revient plusieurs fois, mot pour mot, dans le texte — une technique de propagande connue (« répéter le mensonge ») plutôt qu'une façon naturelle de s'exprimer."
+      },
+      "attribution_non_identifiee": {
+        "label": "Source non identifiée",
+        "explanation": "Le texte attribue une affirmation à quelqu'un (« selon des experts », « on affirme que »…) sans jamais nommer précisément qui parle — impossible de vérifier d'où vient l'information."
+      },
+      "metaphore_guerriere": {
+        "label": "Métaphore guerrière",
+        "explanation": "Le texte décrit une situation (migration, maladie, désaccord politique…) avec un vocabulaire de guerre ou d'invasion — une technique de cadrage qui présente implicitement le sujet comme une menace à repousser plutôt qu'un fait à discuter."
+      }
+    }
+  },
+  "feed": {
+    "title": "Fil des vérifications publiées",
+    "subtitle": "Les contenus analysés et validés par notre équipe de fact-checkeurs.",
+    "empty": "Aucune vérification publiée pour le moment.",
+    "readMore": "Voir le détail",
+    "back": "← Retour au fil",
+    "publishedOn": "Publié le {date}",
+    "resume": "Résumé du fact-checkeur",
+    "fullAnalysis": "Analyse linguistique complète"
+  },
+  "verdicts": {
+    "vrai": "Vrai",
+    "faux": "Faux",
+    "partiellement_vrai": "Partiellement vrai",
+    "non_verifiable": "Non vérifiable",
+    "trompeur": "Trompeur"
+  },
+  "admin": {
+    "title": "Back-office — validation humaine",
+    "passwordLabel": "Mot de passe du back-office",
+    "passwordPlaceholder": "Mot de passe",
+    "login": "Entrer",
+    "wrongPassword": "Mot de passe incorrect.",
+    "loadError": "Impossible de charger la file d'attente — vérifie ta connexion internet et réessaie.",
+    "queueTitle": "File d'attente ({count})",
+    "queueEmpty": "Aucune soumission en attente de validation.",
+    "verdictLabel": "Verdict final",
+    "resumeLabel": "Résumé pour le public",
+    "resumePlaceholder": "Explique en langage clair pourquoi ce contenu est vrai, faux, trompeur…",
+    "authorLabel": "Publié par",
+    "authorPlaceholder": "Ton nom ou celui de l'équipe",
+    "publish": "Publier ce fact-check",
+    "reject": "Rejeter (ne pas publier)",
+    "publishSuccess": "Fact-check publié dans le fil public.",
+    "rejectSuccess": "Soumission rejetée.",
+    "linguisticScore": "Score linguistique automatique : {score}/100 — {label}"
+  },
+  "common": {
+    "loading": "Chargement…",
+    "notFound": "Introuvable."
+  }
+}
