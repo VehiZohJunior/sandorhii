@@ -134,3 +134,43 @@ body {
     animation: none;
   }
 }
+
+/* Bandeaux ASCII qui defilent derriere le wordmark - renforce le cote
+   "scanner en continu" de la sentinelle. Police mono, tres faible opacite :
+   c'est une texture, jamais un second message a lire par-dessus le vrai. */
+.hero-ticker-row {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0.08em;
+}
+
+.hero-ticker-row > span {
+  padding-right: 2.5rem;
+}
+
+.hero-ticker-left {
+  animation: hero-ticker-left var(--ticker-duration, 50s) linear infinite;
+}
+
+.hero-ticker-right {
+  animation: hero-ticker-right var(--ticker-duration, 50s) linear infinite;
+}
+
+@keyframes hero-ticker-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes hero-ticker-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-ticker-left,
+  .hero-ticker-right {
+    animation: none;
+  }
+}
