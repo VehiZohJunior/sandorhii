@@ -21,26 +21,54 @@ const TICKER_PHRASES: Record<string, string[]> = {
   ],
 };
 
+const TICKER_COLORS = [
+  "text-[#4ade80]/[0.13]", // vert
+  "text-accent-light/[0.13]", // bleu
+  "text-white/[0.11]", // blanc
+];
+
 function TickerRow({
   phrases,
   direction,
   duration,
-  className,
+  colorClass,
 }: {
   phrases: string[];
   direction: "left" | "right";
   duration: string;
-  className?: string;
+  colorClass: string;
 }) {
   const text = Array(4).fill(phrases.join("   ▪   ")).join("   ▪   ") + "   ▪   ";
   return (
     <div
-      className={`hero-ticker-row hero-ticker-${direction} ${className ?? ""}`}
+      className={`hero-ticker-row hero-ticker-${direction} ${colorClass}`}
       style={{ ["--ticker-duration" as string]: duration }}
       aria-hidden="true"
     >
       <span>{text}</span>
       <span>{text}</span>
+    </div>
+  );
+}
+
+function TickerCluster({
+  phrases,
+  baseDuration,
+}: {
+  phrases: string[];
+  baseDuration: number;
+}) {
+  return (
+    <div className="flex flex-col gap-1">
+      {Array.from({ length: 6 }).map((_, i) => (
+        <TickerRow
+          key={i}
+          phrases={phrases}
+          direction={i % 2 === 0 ? "left" : "right"}
+          duration={`${baseDuration + i * 4}s`}
+          colorClass={TICKER_COLORS[i % TICKER_COLORS.length]}
+        />
+      ))}
     </div>
   );
 }
@@ -62,10 +90,9 @@ export default async function HomePage({
       <section className="relative overflow-hidden bg-ink px-[6vw] pt-16 pb-28 text-center">
         <div className="hero-grid pointer-events-none absolute inset-0" />
 
-        <div className="pointer-events-none absolute inset-0 flex flex-col justify-between overflow-hidden py-6 text-[.72rem] font-medium text-white/[0.06] sm:text-[.85rem]">
-          <TickerRow phrases={phrases} direction="left" duration="58s" />
-          <TickerRow phrases={phrases} direction="right" duration="46s" className="text-accent-light/[0.09]" />
-          <TickerRow phrases={phrases} direction="left" duration="64s" />
+        <div className="pointer-events-none absolute inset-0 flex flex-col justify-between overflow-hidden py-4 text-[.68rem] font-medium sm:text-[.8rem]">
+          <TickerCluster phrases={phrases} baseDuration={34} />
+          <TickerCluster phrases={phrases} baseDuration={38} />
         </div>
 
         <div
