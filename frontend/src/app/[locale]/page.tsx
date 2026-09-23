@@ -59,7 +59,7 @@ function TickerCluster({
   baseDuration: number;
 }) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-0 leading-[1.1]">
       {Array.from({ length: 6 }).map((_, i) => (
         <TickerRow
           key={i}
