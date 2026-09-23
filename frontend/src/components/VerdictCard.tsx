@@ -30,7 +30,7 @@ export function VerdictCard({
       className="rounded-[18px] p-9 text-center text-white"
       style={{ background: GRADIENTS[verdict] }}
     >
-      <div className="mb-3 text-[1.9rem] font-extrabold tracking-[1.5px]">
+      <div className="mb-3 font-display text-[1.9rem] font-extrabold tracking-[1.5px]">
         {ICONS[verdict]} {t(verdict).toUpperCase()}
       </div>
       {children}

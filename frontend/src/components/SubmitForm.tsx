@@ -47,7 +47,7 @@ export function SubmitForm() {
             className="h-full w-full scale-[1.06] object-cover"
           />
         </div>
-        <h1 className="text-2xl font-extrabold text-[#4F46E5] text-balance">
+        <h1 className="font-display text-2xl font-extrabold text-accent-strong text-balance">
           {t("title")}
         </h1>
         <p className="mx-auto mt-2 max-w-sm text-xl font-extrabold text-heading text-balance">
@@ -71,7 +71,7 @@ export function SubmitForm() {
           <button
             type="submit"
             disabled={loading}
-            className="mt-1 flex w-full items-center justify-center gap-2 rounded-[14px] bg-[#4F46E5] px-[30px] py-4 text-[1.05rem] font-bold tracking-[.4px] text-white transition-all hover:not-disabled:-translate-y-px hover:not-disabled:bg-[#4338CA] hover:not-disabled:shadow-[0_8px_20px_rgba(79,70,229,.32)] disabled:cursor-not-allowed disabled:bg-[#4F46E5]/50"
+            className="mt-1 flex w-full items-center justify-center gap-2 rounded-[14px] bg-accent px-[30px] py-4 text-[1.05rem] font-bold tracking-[.4px] text-white transition-all hover:not-disabled:-translate-y-px hover:not-disabled:bg-accent-strong hover:not-disabled:shadow-[0_8px_20px_rgba(46,109,164,.32)] disabled:cursor-not-allowed disabled:bg-accent/50"
           >
             {loading && <PulseDots />}
             🚀 {loading ? t("submitting") : t("submit")}
@@ -89,7 +89,7 @@ export function SubmitForm() {
       {analysis && (
         <div className="mx-auto max-w-[880px] px-5 pt-12">
           <section className="flex flex-col gap-5 rounded-[18px] border border-border bg-surface p-7">
-            <h2 className="text-xl font-bold text-heading">
+            <h2 className="font-display text-xl font-bold text-heading">
               {t("resultTitle")}
             </h2>
             <p className="rounded-lg bg-accent-soft px-4 py-3 text-sm text-accent-strong">

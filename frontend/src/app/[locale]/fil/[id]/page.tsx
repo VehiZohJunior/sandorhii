@@ -61,7 +61,7 @@ export default async function FeedItemPage({
 
         {analysis && (
           <section className="flex flex-col gap-5 rounded-[18px] border border-border bg-surface p-7">
-            <h2 className="text-xl font-bold text-heading">
+            <h2 className="font-display text-xl font-bold text-heading">
               {t("fullAnalysis")}
             </h2>
             <ScoreGauge

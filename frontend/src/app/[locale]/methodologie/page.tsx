@@ -56,7 +56,7 @@ export default async function MethodologyPage({
     <div className="mx-auto max-w-4xl px-5 py-12">
       <div className="flex flex-col gap-10">
         <div>
-          <h1 className="text-3xl font-extrabold text-heading text-balance">
+          <h1 className="font-display text-3xl font-extrabold text-heading text-balance">
             {t("title")}
           </h1>
           <p className="mt-3 max-w-2xl text-[.95rem] leading-relaxed text-muted">

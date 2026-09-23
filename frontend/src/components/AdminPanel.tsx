@@ -95,7 +95,7 @@ export function AdminPanel() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-lg font-bold text-heading">
+      <h2 className="font-display text-lg font-bold text-heading">
         {t("queueTitle", { count: queue.length })}
       </h2>
       {feedback && (

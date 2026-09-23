@@ -13,7 +13,7 @@ export default async function AdminPage({
   return (
     <div className="mx-auto max-w-4xl px-5 py-12">
       <div className="flex flex-col gap-8">
-        <h1 className="text-3xl font-extrabold text-heading">{t("title")}</h1>
+        <h1 className="font-display text-3xl font-extrabold text-heading">{t("title")}</h1>
         <AdminPanel />
       </div>
     </div>

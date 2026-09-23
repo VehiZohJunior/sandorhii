@@ -18,7 +18,7 @@ export function ScoreGauge({
   return (
     <div className="flex flex-wrap items-center gap-[22px]">
       <div
-        className="flex h-[76px] w-[76px] flex-none items-center justify-center rounded-full border-[3px] text-[1.5rem] font-extrabold"
+        className="flex h-[76px] w-[76px] flex-none items-center justify-center rounded-full border-[3px] font-display text-[1.5rem] font-extrabold"
         style={{ borderColor: color, color }}
       >
         {score.toFixed(0)}%
