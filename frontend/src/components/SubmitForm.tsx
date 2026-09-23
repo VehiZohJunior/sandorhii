@@ -38,7 +38,7 @@ export function SubmitForm() {
 
   return (
     <>
-      <div className="mx-auto max-w-[480px] rounded-[28px] bg-surface px-[7vw] py-10 text-center shadow-[0_20px_50px_rgba(15,42,77,.14)]">
+      <div className="relative mx-auto -mt-20 max-w-[480px] rounded-[28px] border border-white/10 bg-surface px-[7vw] py-10 text-center shadow-[0_30px_70px_rgba(6,17,33,.35)]">
         <div className="mx-auto mb-5 h-[168px] w-[168px] overflow-hidden rounded-full shadow-[0_4px_14px_rgba(15,42,77,.18)]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

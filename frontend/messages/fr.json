@@ -1,8 +1,8 @@
 {
   "brand": {
-    "name": "SandorHii",
+    "name": "SanDorHii",
     "tagline": "La vérité, vérifiée.",
-    "metaDescription": "SandorHii détecte les fake news grâce à trois pôles d'analyse complémentaires — linguistique, média et technologique — pour déterminer si un contenu est une fake news ou une information réelle."
+    "metaDescription": "SanDorHii détecte les fake news grâce à trois pôles d'analyse complémentaires — linguistique, média et technologique — pour déterminer si un contenu est une fake news ou une information réelle."
   },
   "nav": {
     "home": "Vérifier",
@@ -16,17 +16,23 @@
     "dark": "sombre"
   },
   "home": {
+    "heroEyebrow": "Née en Côte d'Ivoire",
+    "heroTagline": "La sentinelle numérique de l'information",
+    "heroMission": "Notre ambition : devenir <accent>LA référence</accent> du fact-checking en Côte d'Ivoire, en Afrique de l'Ouest, puis sur tout le continent.",
+    "heroStat1": "3 pôles d'analyse",
+    "heroStat2": "18 techniques détectées",
+    "heroStat3": "100 % transparent",
     "title": "Bonjour, c'est ZOH !",
     "subtitle": "🔍 Que veux-tu vérifier aujourd'hui ?",
     "placeholder": "Colle le texte à analyser, ou décris l'information que tu veux vérifier…",
     "submit": "Lancer la vérification",
     "submitting": "Analyse en cours…",
     "minLength": "Le texte doit contenir au moins 20 caractères.",
-    "footerTag": "Service de Fact-Checking • SandorHii",
+    "footerTag": "Service de Fact-Checking • SanDorHii",
     "disclaimer": "⚖️ Les résultats sont générés par un système automatisé et constituent une aide à la décision, pas une déclaration définitive de fait.",
     "error": "Une erreur est survenue. Vérifie ta connexion et réessaie.",
     "resultTitle": "Résultat de l'analyse linguistique",
-    "resultNote": "Ceci est le premier des trois pôles d'analyse de SandorHii : le pôle linguistique (v1). Il mesure la présence de techniques de manipulation connues — ce n'est pas encore le verdict final (fake news ou info réelle). Notre équipe humaine examine chaque soumission avant de publier ce verdict.",
+    "resultNote": "Ceci est le premier des trois pôles d'analyse de SanDorHii : le pôle linguistique (v1). Il mesure la présence de techniques de manipulation connues — ce n'est pas encore le verdict final (fake news ou info réelle). Notre équipe humaine examine chaque soumission avant de publier ce verdict.",
     "noSignals": "Aucune technique de manipulation linguistique connue n'a été détectée dans ce texte.",
     "signalsTitle": "Signaux détectés",
     "occurrences": "{count, plural, =1 {1 occurrence} other {# occurrences}}",
@@ -35,7 +41,7 @@
     "langUnsupported": "Le pilier linguistique ne sait pas encore analyser cette langue en détail — seuls les signaux structurels (majuscules, ponctuation) sont mesurés.",
     "pillars": {
       "title": "Trois pôles d'analyse, un seul verdict : fake news ou info réelle ?",
-      "subtitle": "La mission de SandorHii : déterminer si un contenu est une fake news ou une information réelle, en croisant trois pôles d'analyse complémentaires — linguistique, média et technologique. Notre différence : le pôle linguistique décortique la manière dont un texte cherche à manipuler, pas seulement ce qu'il montre.",
+      "subtitle": "La mission de SanDorHii : déterminer si un contenu est une fake news ou une information réelle, en croisant trois pôles d'analyse complémentaires — linguistique, média et technologique. Notre différence : le pôle linguistique décortique la manière dont un texte cherche à manipuler, pas seulement ce qu'il montre.",
       "statusActive": "Actif aujourd'hui",
       "statusSoon": "Phase 2 — à venir",
       "linguistic": {
@@ -180,8 +186,8 @@
   },
   "methodology": {
     "navLabel": "Méthodologie",
-    "title": "Comment fonctionne SandorHii ?",
-    "intro": "SandorHii existe pour répondre à une seule question : ce contenu est-il une fake news ou une information réelle ? Pour y répondre sérieusement, on croise trois pôles d'analyse complémentaires — linguistique, média et technologique. Voici, en toute transparence, ce qui est actif aujourd'hui et comment ça fonctionne réellement.",
+    "title": "Comment fonctionne SanDorHii ?",
+    "intro": "SanDorHii existe pour répondre à une seule question : ce contenu est-il une fake news ou une information réelle ? Pour y répondre sérieusement, on croise trois pôles d'analyse complémentaires — linguistique, média et technologique. Voici, en toute transparence, ce qui est actif aujourd'hui et comment ça fonctionne réellement.",
     "stepsTitle": "Le parcours d'une vérification",
     "step1Title": "1. Vous soumettez un texte",
     "step1Text": "Collez le texte, le message ou l'article que vous voulez faire vérifier.",
@@ -201,7 +207,7 @@
     "title": "Conditions d'utilisation & confidentialité",
     "updated": "Dernière mise à jour : 25 août 2026",
     "whoTitle": "Qui gère ce site",
-    "whoText": "SandorHii est un projet indépendant de fact-checking. Pour toute question sur cette page ou sur vos données, écrivez-nous : {email}.",
+    "whoText": "SanDorHii est un projet indépendant de fact-checking. Pour toute question sur cette page ou sur vos données, écrivez-nous : {email}.",
     "dataTitle": "Ce que vous nous envoyez",
     "dataText": "Quand vous soumettez un texte à vérifier, on enregistre : le texte lui-même, la langue choisie, et la date d'envoi. C'est tout — aucun compte n'est requis, on ne vous demande jamais votre nom, votre email ou votre numéro de téléphone pour utiliser le service.",
     "useTitle": "Comment c'est utilisé",

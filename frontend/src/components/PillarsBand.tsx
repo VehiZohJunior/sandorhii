@@ -77,7 +77,7 @@ export async function PillarsBand() {
   return (
     <section className="flex flex-col gap-5 rounded-2xl border border-border bg-surface-alt/60 p-6">
       <div>
-        <h2 className="text-lg font-bold text-heading text-balance">
+        <h2 className="font-display text-xl font-bold text-heading text-balance">
           {t("title")}
         </h2>
         <p className="mt-1.5 max-w-2xl text-sm text-muted">{t("subtitle")}</p>

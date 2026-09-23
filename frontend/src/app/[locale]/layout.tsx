@@ -49,6 +49,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning className="h-full antialiased">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap"
+        />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body className="flex min-h-full flex-col font-body">
@@ -66,8 +72,8 @@ export default async function LocaleLayout({
                   alt={t("brand.name")}
                   className="h-11 w-auto rounded-md bg-white p-0.5"
                 />
-                <span className="hidden text-sm font-bold tracking-wide text-white sm:inline">
-                  {t("brand.name")}
+                <span className="font-display text-lg font-bold tracking-tight text-white sm:text-xl">
+                  San<span className="text-accent-light">Dor</span>Hii
                 </span>
               </Link>
               <nav className="hidden items-center gap-5 text-sm sm:flex">
