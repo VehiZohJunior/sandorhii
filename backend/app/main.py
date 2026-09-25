@@ -8,6 +8,7 @@ from slowapi.errors import RateLimitExceeded
 from .core.config import settings
 from .core.db import Base, engine
 from .core.limiter import limiter
+from .core.security import BodySizeLimitMiddleware, SecurityHeadersMiddleware
 from .modules.linguistic import attribution
 from .modules.newsroom.router import router as newsroom_router
 from .modules.public.router import router as public_router
@@ -37,6 +38,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+# Rejette les corps de requete trop volumineux avant CORS/routage (couche
+# interne), et ajoute les en-tetes de securite a TOUTE reponse, y compris
+# les rejets ci-dessus (couche la plus externe - ajoutee en dernier).
+app.add_middleware(BodySizeLimitMiddleware)
+app.add_middleware(SecurityHeadersMiddleware)
 
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)

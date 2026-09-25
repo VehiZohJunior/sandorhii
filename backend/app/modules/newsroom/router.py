@@ -13,6 +13,10 @@ router = APIRouter(
     tags=["newsroom"],
     dependencies=[Depends(require_admin)],
 )
+# La limite de tentatives (bonnes ou mauvaises) vit dans require_admin()
+# lui-meme (app/core/deps.py) - voir le commentaire la-bas pour pourquoi
+# un @limiter.limit() ici ne suffirait pas a bloquer les mots de passe
+# incorrects.
 
 
 @router.get("/queue", response_model=list[SubmissionOut])
